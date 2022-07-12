@@ -1,0 +1,45 @@
+
+<div>
+  <h1 className="title">Availity Registration Form
+  </h1>
+  <div margin-left = "25%">
+    <form [formGroup]="myform" className="App" (ngSubmit)="onSubmit()">
+      <div >
+        <label for="firstName">
+          First Name
+        </label>  
+        <br/>
+        <input id="name" type="text" formControlName="firstName" width = "150px" >    
+      </div>     
+      <div > 
+        <label for="npiNumber">
+          NPI Number
+        </label>
+        <br/>
+        <input id="npiNumber" type="text"  formControlName="npiNumber" width = "150px" >    
+        </div>
+      <div >
+        <label for="businessAddress">
+          Business Address
+        </label>
+        <br/>
+        <input id="bAddress" type="text"  formControlName="businessAddress" width = "150px" >    
+      </div> 
+      <div >
+        <label for="telephoneNumber">
+          Telephone Number
+        </label>
+        <br/>
+        <input id="telephoneNumber" type="text"  formControlName="telephoneNumber" width = "150px" >       
+      </div>
+      <div >
+        <label for="emailAddress">
+          Email Address
+        </label>
+        <br/>
+        <input id="emailAddress" type="text"  formControlName="emailAddress" width = "150px" >     
+      </div>
+      <button class="button" type="submit">Register</button>
+    </form>
+  </div>
+</div>
